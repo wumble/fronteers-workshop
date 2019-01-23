@@ -3,3 +3,23 @@
   publish = "dist"
 
 
+
+
+
+# Redirect a likely mistake
+[[redirects]]
+  from = "/edition*"
+  to = "/number/:splat"
+  status = 302
+
+
+# 404s
+[[redirects]]
+  from = "/number*"
+  to = "/edition-not-found"
+  status = 404
+
+[[redirects]]
+  from = "*"
+  to = "/404"
+  status = 404

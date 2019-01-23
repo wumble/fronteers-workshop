@@ -136,6 +136,45 @@ a {
 }
 
 
+// forms
+form {
+  border-radius: 2px;
+  padding: 1em 2em;
+  margin: 2em -2em 1em -2em
+}
+label small {
+  opacity: 0.6em;
+  display: block;
+}
+input,
+textarea {
+  width: 100%;
+  border: solid 1px #bbb;
+  padding: 0.2em;
+  font-size: 1.2rem;
+}
+textarea {
+  height: 8rem;
+}
+
+.btn,
+button {
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #555;
+  color:#fff;
+  font-family: Georgia, serif;
+  border-style: none;
+  padding: 0.5em 1em;
+  border-radius: 3px
+}
+.honey {
+  display:none;
+}
+.needs-content {
+  border-color: #af2a40;
+}
+
 
 
 

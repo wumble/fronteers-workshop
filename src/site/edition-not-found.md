@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.njk
-title: Coming soon
-subtitle: This episode has not been published yet
+title: Ummmm...
+subtitle: We can't find that edition
 ---
 
 ## {{ subtitle }}
 
-We're working on it! While we get this episode ready, you can take a look at what went into the [recent episodes](https://github.com/netlify/ask-netlify/milestones), and also [ask more questions](https://github.com/netlify/ask-netlify/issues/new).
+Is this really an edition of the meetup?
+Might the URL be wrong?
+No judgement, but we can't seem to find it.
