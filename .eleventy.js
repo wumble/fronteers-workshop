@@ -1,3 +1,6 @@
+var env = process.env.ELEVENTY_ENV;
+
+
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("dateDisplay", require("./src/site/_filters/dates.js") );
@@ -38,18 +41,20 @@ module.exports = function(eleventyConfig) {
 
 
   // minify the html output
-  const htmlmin = require("html-minifier");
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-    return content;
-  });
+  if(env == 'prod'){
+    const htmlmin = require("html-minifier");
+    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+      if( outputPath.endsWith(".html") ) {
+        let minified = htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+        });
+        return minified;
+      }
+      return content;
+    });
+  }
 
 
   // other config settings

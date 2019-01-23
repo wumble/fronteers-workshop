@@ -4,7 +4,7 @@
   "description": "An SSG and Netlify playground",
   "scripts": {
     "start": "gulp build && gulp watch & eleventy --serve",
-    "build": "gulp build & eleventy"
+    "build": "gulp build & ELEVENTY_ENV=prod eleventy"
   },
   "repository": {
     "type": "git",
