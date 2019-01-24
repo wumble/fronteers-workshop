@@ -12,10 +12,19 @@
 1. Creating a new site on Netlify
 1. Setting build commands and destinations
 1. Site and deploy config
----
-1. Make local changes: Site title
+1. Make local changes: add page
 1. Push to deploy
 1. Preview URLs and rollbacks
+
+
+## Data abstraction
+
+1. Create json data files for reusable data
+1. Create js data files to pul from Medium
+1. Pull in data locally and in prod
+---
+1. Seeding local data
+1. Creating build targets
 
 
 ## Introducing a build pipeline
@@ -38,7 +47,8 @@
 1. Accessing submissions in the UI
 1. Accessing submission via the API
   1. Creating auth tokens
-  1. Access environment variable
+  1. Failed deploys
+  1. Access environment variables
 
 
 ## Notifications and triggers
@@ -47,6 +57,18 @@
 1. Slack
 1. Deploy hooks
 1. Rebuilding on submission
+
+
+## Content abstraction
+
+1. Contentful
+1. Content modelling
+1. Sourcing and deploying
+
+
+## Exercise
+
+1. Pull content from a third party feed
 
 
 ## Functions
@@ -62,5 +84,21 @@
 ## Advanced deploy settings
 1. Creating deploy contexts
 
+
+
+
+---
+
+9:30 - 10:00 : Intros, opening
+10:00 - 11:00 : Exercises
+11:00 - 11:20 : Break
+11:20 - 12:30 : Exercises
+
+12:30 - 13:30 : Lunch
+
+13:30 - 14:30 : recap, exercises
+14:30 - 14:50 : break
+14:50 - 16:30 : exercises
+16:30 - 17:00 : recaps. summary, resources
 
 

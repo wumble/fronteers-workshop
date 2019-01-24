@@ -38,4 +38,13 @@ The build command `yarn run build` will generate a set of static assets in a `di
 
 
 
+## Links
+
+These links were referenced during the workshop:
+
+- https://staticgen.com
+- https://headlesscms.org
+- https://github.com/philhawksworth/medium-export
+
+
 
