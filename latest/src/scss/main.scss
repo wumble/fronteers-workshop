@@ -1,43 +1,45 @@
-html,
-body {
+@import '_variables';
+@import '_mixins';
+
+html, body {
   margin: 0;
   padding: 0;
 }
+
 body {
   text-align: center;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.618;
   -webkit-font-smoothing: antialiased;
   background: #fff;
-  color: rgba(14, 30, 37, 0.54);
-}
-@media (min-width: 800px) {
-  body {
+  color: rgba(14,30,37,.54);
+  @include bp(mid) {
     font-size: 1.25rem;
   }
 }
+
 header {
   background-color: #222;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,.8);
   padding-top: 2em;
   padding-bottom: 4em;
+  a:link,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+    &.active {
+      text-decoration: underline;
+    }
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
 }
-header a:link,
-header a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-header a:link.active,
-header a:visited.active {
-  text-decoration: underline;
-}
-header a:hover,
-header a:focus {
-  text-decoration: underline;
-}
+
+
 a.btn:link,
 a.btn:visited {
   box-sizing: border-box;
@@ -47,44 +49,43 @@ a.btn:visited {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.618em;
-  padding: 0.382em 1em;
-  margin-bottom: 0.5em;
+  padding: .382em 1em;
+  margin-bottom:0.5em;
   text-align: center;
   text-decoration: none;
   border: 0;
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
   cursor: pointer;
   background: #00b09f;
   color: #fff;
-  transition: all 0.15s ease;
+  transition: all .15s ease;
 }
+
 a.btn:hover,
 a.btn:focus {
   background-color: #00c2b2;
 }
+
+
 .container {
   width: 80%;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-}
-@media (min-width: 800px) {
-  .container {
+  @include bp(mid) {
     width: 70%;
     max-width: 700px;
   }
-}
-@media (min-width: 1270px) {
-  .container {
+  @include bp(wide) {
     width: 60%;
     max-width: 600px;
   }
 }
-h1,
-h2,
-h3 {
-  padding-top: 1em;
+
+// Headings
+h1, h2, h3 {
+  padding-top:1em;
   line-height: 1.2;
   color: #000;
   margin: 1.618em auto 0;
@@ -94,45 +95,52 @@ header h1 {
   line-height: 1.2;
   color: #fff;
   font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: 0;
-  padding-top: 0.3rem;
-  padding-bottom: 0.4rem;
+  margin-top:1em;
+  margin-bottom:0;
+  padding-top:0.3rem;
+  padding-bottom:0.4rem;
 }
 h2 {
   font-size: 1.618em;
   line-height: 1.333;
   font-weight: 600;
 }
+
 ul {
   margin-left: 0;
   padding-left: 1em;
 }
+
 hr {
   border-style: none;
   border-bottom: solid 1px #eee;
   margin: 2em 0;
 }
+
 .main {
   padding-bottom: 6em;
   position: relative;
 }
+
 a {
   outline-color: #00c2b2;
   color: #00b09f;
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
-a:link,
-a:visited {
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
+
+
+// forms
 form {
   border-radius: 2px;
   padding: 1em 2em;
-  margin: 2em -2em 1em -2em;
+  margin: 2em -2em 1em -2em
 }
 label small {
   opacity: 0.6em;
@@ -148,20 +156,27 @@ textarea {
 textarea {
   height: 8rem;
 }
+
 .btn,
 button {
   cursor: pointer;
   font-size: 1em;
   background-color: #555;
-  color: #fff;
+  color:#fff;
   font-family: Georgia, serif;
   border-style: none;
   padding: 0.5em 1em;
-  border-radius: 3px;
+  border-radius: 3px
 }
 .honey {
-  display: none;
+  display:none;
 }
 .needs-content {
   border-color: #af2a40;
 }
+
+
+
+
+
+
