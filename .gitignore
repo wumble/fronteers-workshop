@@ -1,3 +1,3 @@
-node_modules
-dist
-.env
+/1/node_modsules
+/**/dist
+/**/.env
