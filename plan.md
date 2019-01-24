@@ -30,8 +30,37 @@
 
 1. Create `css-pipeline` branch
 1. Add 11ty CSS min
-1.
+
+
+## Forms and submissions
+
+1. Adding a form
+1. Accessing submissions in the UI
+1. Accessing submission via the API
+  1. Creating auth tokens
+  1. Access environment variable
+
+
+## Notifications and triggers
+
+1. Submission notifications
+1. Slack
+1. Deploy hooks
+1. Rebuilding on submission
+
+
+## Functions
+
+1. Local build
+1. First function
+1. Deploying
+1. Bundling and requiring
+1. Event triggers
+
 
 
 ## Advanced deploy settings
 1. Creating deploy contexts
+
+
+

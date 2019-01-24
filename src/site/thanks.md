@@ -8,3 +8,6 @@ title: Thanks
 
 We'll take a look at it and get back to you.
 
+
+[Submitted proposals](/private/proposed)
+

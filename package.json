@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "An SSG and Netlify playground",
   "scripts": {
-    "start": "gulp build && gulp watch & eleventy --serve",
-    "build": "gulp build & ELEVENTY_ENV=prod eleventy"
+    "start": "gulp build && gulp watch & ELEVENTY_ENV=dev eleventy --serve",
+    "build": "gulp build & ELEVENTY_ENV=prod eleventy",
+    "seed": "gulp build & ELEVENTY_ENV=seed eleventy"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,8 @@
   "dependencies": {
     "@11ty/eleventy": "0.6.0",
     "@11ty/eleventy-plugin-rss": "^1.0.5",
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
     "html-minifier": "^3.5.20"

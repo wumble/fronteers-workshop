@@ -3,13 +3,22 @@ var env = process.env.ELEVENTY_ENV;
 
 module.exports = function(eleventyConfig) {
 
+  /*
+    Filters
+  */
   eleventyConfig.addFilter("dateDisplay", require("./src/site/_filters/dates.js") );
   eleventyConfig.addFilter("future", require("./src/site/_filters/future.js") );
+
+
+  /*
+    Collections
+  */
 
   // Get only content that matches a tag of "edition"
   eleventyConfig.addCollection("editions", function(collection) {
     return collection.getFilteredByTag("edition");
   });
+
   // A collection of editions with future dates
   eleventyConfig.addCollection("futureEditions", function(collection) {
     var now = new Date();
@@ -18,6 +27,7 @@ module.exports = function(eleventyConfig) {
       return now - when < 0 ? true : false;
     });
   });
+
   // A collection of editions with dates in the past
   eleventyConfig.addCollection("previousEditions", function(collection) {
     var now = new Date();
@@ -27,17 +37,16 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+
+  /*
+    shortcodes
+  */
+
   // Nunjucks active link shortcode
   eleventyConfig.addNunjucksShortcode("active", function(url, path) {
     return path == url ? `class="active"` : null;
   });
 
-
-
-
-  // RSS plugin
-  const pluginRss = require("@11ty/eleventy-plugin-rss");
-  eleventyConfig.addPlugin(pluginRss);
 
 
   // minify the html output
@@ -58,10 +67,14 @@ module.exports = function(eleventyConfig) {
 
 
   // other config settings
+
+  // make the seed target act like prod
+  var dataPath = (env=="seed") ? "prod" : env;
   return {
     dir: {
       input: "src/site",
-      output: "dist"
+      output: "dist",
+      data: `_data/${dataPath}`
     },
     templateFormats : ["njk", "md"],
     htmlTemplateEngine : "njk",
