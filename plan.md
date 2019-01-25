@@ -38,9 +38,12 @@
 
 
 ## Branch deploys
+(folder 3)
 
-1. Create `css-pipeline` branch
-1. Add 11ty CSS min
+1. tidy-medium branch
+1. format the about page listing
+1. enable branch builds and push
+1. merge to master
 
 
 ## Forms and submissions
