@@ -1,6 +1,7 @@
 # Fronteers workshop: SSGs and Netlify
 
 ## Project bootstrapping and local dev
+(folder 1)
 
 1. Fork repo
 1. Local installation
@@ -18,6 +19,7 @@
 
 
 ## Introducing a build pipeline
+(folder 2)
 
 1. Explore netlify.toml for base and build commands
 1. Create css pipeline with gulp
@@ -25,17 +27,14 @@
 1. Updating deploy settings: build command
 
 
+
 ## Data abstraction
+(folder 3)
 
 1. Create json data files for reusable data
-1. Create js data files to pul from Medium
-1. Pull in data locally and in prod
----
+1. Create js data files to pull from Medium
 1. Seeding local data
 1. Creating build targets
-
-
-
 
 
 ## Branch deploys
