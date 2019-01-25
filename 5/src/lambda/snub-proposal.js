@@ -27,7 +27,7 @@ exports.handler = function(event, context, callback) {
       callback(null, {
         statusCode: 301,
         headers: {
-          Location: '/gone.md',
+          Location: '/gone',
         }
       });
     }
