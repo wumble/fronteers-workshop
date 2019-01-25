@@ -6,7 +6,7 @@ title: My meetup is amazing
 
 ## Is it amazing?
 
-Yes it is. Look at the different editions!
+> Yes it is. Look at the different editions!
 
 
 ## Editions
