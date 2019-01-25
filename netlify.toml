@@ -38,7 +38,7 @@
 [[redirects]]
   from = "/number*"
   to = "/edition-not-found"
-  status = 302
+  status = 404
 
 [[redirects]]
   from = "*"
