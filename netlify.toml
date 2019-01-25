@@ -27,10 +27,6 @@
   conditions = {Role = ["admin"]}
 
 
-
-s
-
-
 # 404s
 [[redirects]]
   from = "/number*"
