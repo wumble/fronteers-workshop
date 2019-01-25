@@ -17,10 +17,11 @@ To build the site you need:
 ```bash
 
 # clone this repository
-git clone git@github.com:netlify/ask-netlify.git
+git clone git@github.com:netlify/fronteers-workshop.git
 
 # go to the working directory
-cd ask-netlify
+# there are several directories to help us through the exercises
+cd fronteers-workshop/1
 
 # install dependencies
 yarn
@@ -45,6 +46,7 @@ These links were referenced during the workshop:
 - https://staticgen.com
 - https://headlesscms.org
 - https://github.com/philhawksworth/medium-export
+- https://functions-playground.netlify.com/
 
 
 
