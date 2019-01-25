@@ -19,6 +19,7 @@ module.exports = () => {
         for(submission in response.data) {
           var entry = response.data[submission].data;
           entry.date = response.data[submission].created_at;
+          entry.id = response.data[submission].id;
           data.push(entry);
         }
 
