@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.njk
-title: Editions
+title: All editions of the meetup
 ---
 
-## All editions of the meetups
+## Listings
+
+All the editions past and futureAll editions of the meetups
 
 <ul>
 {% for edition in collections.editions | reverse %}

@@ -1,0 +1,20 @@
+{
+  "name": "ssgs-and-netlify",
+  "version": "1.0.0",
+  "description": "An SSG and Netlify playground",
+  "scripts": {
+    "start": "gulp build & gulp watch & eleventy --serve",
+    "build": "gulp build & eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philhawksworth/hawksworx.com"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "0.6.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "author": "Phil Hawksworth",
+  "license": "ISC"
+}

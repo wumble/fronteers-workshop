@@ -17,6 +17,14 @@
 1. Preview URLs and rollbacks
 
 
+## Introducing a build pipeline
+
+1. Explore netlify.toml for base and build commands
+1. Create css pipeline with gulp
+1. yarn scripts: start / build
+1. Updating deploy settings: build command
+
+
 ## Data abstraction
 
 1. Create json data files for reusable data
@@ -27,12 +35,7 @@
 1. Creating build targets
 
 
-## Introducing a build pipeline
 
-1. npm scripts: start / build
-1. Adding a footer: Last update env
-1. Updating deploy settings: build command
-1. Adding config to code: netlify.toml
 
 
 ## Branch deploys
