@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Roboto+Mono:400">
+    <style>{% include "css/main.css" %}</style>
+    <title>{%- if title -%}{{ title }}{%- else -%}My Meetups Site{%- endif -%}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Information about my super special meetup nights.{%- endif -%}"/>
+    <link rel="alternate" href="/feed.xml" title="My Meetups" type="application/atom+xml">
+    <!-- include the widget -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      {% include "navigation.njk" %}
+      <h1>{{title}}</h1>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+      {{ content | safe }}
+      </div>
+    </div>
+  </body>
+</html>
+
+
+

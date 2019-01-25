@@ -1,0 +1,5 @@
+<li>
+  <time>{{ item.date | dateDisplay }}</time> -
+  {{ item.name }} - {{ item.location }} - {{ item.comments }}
+  <a href="/.netlify/functions/snub-proposal?id={{ item.id }}">Delete</a>
+</li>
