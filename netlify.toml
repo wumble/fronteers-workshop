@@ -8,7 +8,7 @@
 
 # Redirect a likely mistake
 [[redirects]]
-  from = "/edition*"
+  from = "/edition/*"
   to = "/number/:splat"
   status = 302
 
@@ -38,7 +38,7 @@
 [[redirects]]
   from = "/number*"
   to = "/edition-not-found"
-  status = 404
+  status = 302
 
 [[redirects]]
   from = "*"
