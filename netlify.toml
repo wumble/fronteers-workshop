@@ -22,6 +22,7 @@
 # lockdown the private directory
 [[redirects]]
   from = "/private/*"
+  to = "/private/*"
   status = 200
   force = true
   conditions = {Role = ["admin"]}
