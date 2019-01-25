@@ -80,7 +80,7 @@
 
 1. custom 404s
 1. Redirect edition to number
-1. Proxying
+1. Proxying... lambdas, externally
 1. Language and locales
 1. Roles and identity
 
