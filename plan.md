@@ -46,6 +46,13 @@
 1. merge to master
 
 
+BREAK
+
+1. js pipeline
+1. split test
+
+
+
 ## Forms and submissions
 (folder 4)
 
@@ -76,7 +83,8 @@
 1. Event triggers
 
 
-## Redirects
+## Redirects and identity
+(folder 6)
 
 1. custom 404s
 1. Redirect edition to number

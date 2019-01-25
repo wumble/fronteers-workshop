@@ -1,46 +1,46 @@
 [build]
-  base = "/6"
-  publish = "/6/dist"
-  functions = "/6/functions"
-  command = "yarn run build"
+  base = "/1"
+  publish = "/1/dist"
+  functions = "/1/functions"
+  command = "eleventy"
 
 
 
 # Redirect a likely mistake
-[[redirects]]
-  from = "/edition*"
-  to = "/number/:splat"
-  status = 302
+# [[redirects]]
+#   from = "/edition*"
+#   to = "/number/:splat"
+#   status = 302
 
 
 # proxy calls to functions
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+# [[redirects]]
+#   from = "/api/*"
+#   to = "/.netlify/functions/:splat"
+#   status = 200
 
 # lockdown the private directory
-[[redirects]]
-  from = "/private/*"
-  to = "/private/proposed"
-  status = 200
-  force = true
-  conditions = {Role = ["admin"]}
+# [[redirects]]
+#   from = "/private/*"
+#   to = "/private/proposed"
+#   status = 200
+#   force = true
+#   conditions = {Role = ["admin"]}
 
-[[redirects]]
-  from = "/private/*"
-  to = "/login"
-  status = 401
-  force = true
+# [[redirects]]
+#   from = "/private/*"
+#   to = "/login"
+#   status = 401
+#   force = true
 
 
 # 404s
-[[redirects]]
-  from = "/number*"
-  to = "/edition-not-found"
-  status = 404
+# [[redirects]]
+#   from = "/number*"
+#   to = "/edition-not-found"
+#   status = 404
 
-[[redirects]]
-  from = "*"
-  to = "/404"
-  status = 404
+# [[redirects]]
+#   from = "*"
+#   to = "/404"
+#   status = 404
