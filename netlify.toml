@@ -13,6 +13,14 @@
   status = 302
 
 
+# proxy calls to functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+
+
 # 404s
 [[redirects]]
   from = "/number*"
