@@ -1,7 +1,7 @@
 [build]
-  base = "/1"
-  publish = "/1/dist"
-  functions = "/1/functions"
+  base = "/4"
+  publish = "/4/dist"
+  functions = "/4/functions"
   command = "eleventy"
 
 
