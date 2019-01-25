@@ -1,6 +1,6 @@
 [build]
-  base = "/4"
-  publish = "/4/dist"
+  base = "/5"
+  publish = "/5/dist"
   command = "yarn run build"
   functions = "functions"
 
