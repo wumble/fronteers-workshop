@@ -26,6 +26,12 @@
   force = true
   conditions = {Role = ["admin"]}
 
+[[redirects]]
+  from = "/private/*"
+  to = "/login"
+  status = 401
+  force = true
+
 
 # 404s
 [[redirects]]
