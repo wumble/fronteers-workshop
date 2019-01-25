@@ -47,6 +47,7 @@
 
 
 ## Forms and submissions
+(folder 4)
 
 1. Adding a form
 1. Accessing submissions in the UI
@@ -57,11 +58,34 @@
 
 
 ## Notifications and triggers
+(folder 4)
 
 1. Submission notifications
 1. Slack
 1. Deploy hooks
 1. Rebuilding on submission
+
+
+## Functions
+(folder 5)
+
+1. Local build
+1. First function
+1. Deploying
+1. Bundling and requiring
+1. Event triggers
+
+
+## Redirects
+
+1. custom 404s
+1. Redirect edition to number
+1. Proxying
+1. Language and locales
+1. Roles and identity
+
+
+
 
 
 ## Content abstraction
@@ -71,18 +95,9 @@
 1. Sourcing and deploying
 
 
-## Exercise
-
-1. Pull content from a third party feed
 
 
-## Functions
 
-1. Local build
-1. First function
-1. Deploying
-1. Bundling and requiring
-1. Event triggers
 
 
 

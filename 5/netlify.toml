@@ -1,9 +1,7 @@
 [build]
-  base = "/4"
-  publish = "/4/dist"
+  publish = "dist"
   command = "yarn run build"
   functions = "functions"
-
 
 
 # Redirect a likely mistake
